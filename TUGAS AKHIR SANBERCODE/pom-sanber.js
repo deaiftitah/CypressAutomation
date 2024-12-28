@@ -1,11 +1,11 @@
-export default class loginPage {
-    static textLogin(){
+export default class loginpom {
+    static login(){
         return cy.get('[class="oxd-text oxd-text--h5 orangehrm-login-title"]')    
     }
-    static inputUsername(){
+    static uname(){
         return cy.get('[name="username"]');   
     }
-    static inputPassword(){
+    static inputPass(){
         return cy.get('[name="password"]');
     }
     static forgotPassword(){
@@ -31,5 +31,29 @@ export default class loginPage {
     }
     static invalidLogin(){
         return cy.get('[class="oxd-text oxd-text--p oxd-alert-content-text"]');
+    }
+    static menusidebar(){
+        return cy.get('[class="oxd-main-menu"]');
+    }
+    static textdirectory(){
+        return cy.get('[class="oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module"]');
+    }
+    static inputemployee(){
+        return cy.get('[placeholder="Type for hints..."]');   
+    }
+    static selectname(){
+        return cy.get('[class="oxd-grid-item oxd-grid-item--gutters"]');
+    }
+    static jobTitle(){
+        return cy.get('[class="oxd-select-wrapper"]');   
+    }
+    static selectjobtitle(){
+        return cy.get('[class="oxd-select-dropdown --positon-bottom"]')
+    }
+    static location(){
+        return cy.get('[class="oxd-select-wrapper"]');   
+    }
+    static selectlocation(){
+        return cy.get('[class="oxd-select-dropdown --positon-bottom"]')
     }
 }
